@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let res = new Set()
+        res.add(20)
+        res.add(21)
+        res.add(21)
+        res.add(22)
+        res.add(23)
+        res.delete(22)
+        res.has(20)
+        res.forEach((val) => {
+            console.log(val);
+        })
+        console.log(res);
+        res.clear()
+
+
+        let m1 = new Map()
+        m1.set("name", "tusha")
+        m1.set("name1", "krishna")
+        m1.get("name")
+        m1.delete("name")
+        console.log(m1);
+
+        let w1 = new WeakSet()
+        w1.add({ name: "tusha",})
+        w1.delete(name)
+        w1.has("tusha")
+        w1.clear()
+        console.log(w1);
+
+    </script>
+</body>
+
+</html>
